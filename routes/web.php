@@ -52,12 +52,19 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('upgrade', function () {
 		return view('pages.upgrade');
 	})->name('upgrade');
+	//Reportes
+	Route::get('reporte/ventas-gastos', function(){
+		return view('tacticos.ventas-gastos');
+	})->name('ventas-gastos');
+	Route::get('reporte/control-costos', function(){
+		return view('Estrategicos.control-costos');
+	})->name('control-costos');
 });
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);	
 });
 

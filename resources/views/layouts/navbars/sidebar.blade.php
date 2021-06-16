@@ -19,17 +19,17 @@
       </li>
       <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
-          <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>
+          <i class="material-icons">work</i>
           <p>{{ __('Reportes Tacticos') }}
             <b class="caret"></b>
           </p>
         </a>
         <div class="collapse show" id="laravelExample">
           <ul class="nav">
-            <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('profile.edit') }}">
-                <span class="sidebar-mini"> UP </span>
-                <span class="sidebar-normal">{{ __('Reporte 1') }} </span>
+            <li class="nav-item{{ $activePage == 'ventas-gastos' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('ventas-gastos') }}">
+                <span class="sidebar-mini"> RVG </span>
+                <span class="sidebar-normal">{{ __('Resumen de ventas y gastos') }} </span>
               </a>
             </li>
             <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
@@ -44,23 +44,54 @@
       
       <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample2" aria-expanded="true">
-          <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>
+          <i class="material-icons">work</i>
           <p>{{ __('Reportes Estrategicos') }}
             <b class="caret"></b>
           </p>
         </a>
         <div class="collapse show" id="laravelExample2">
           <ul class="nav">
-            <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('profile.edit') }}">
-                <span class="sidebar-mini"> UP </span>
-                <span class="sidebar-normal">{{ __('Reporte 1') }} </span>
+            <li class="nav-item{{ $activePage == 'control-costos' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('control-costos') }}">
+                <span class="sidebar-mini"> CI </span>
+                <span class="sidebar-normal">{{ __('Control de costos de los') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('insumos en las diferentes etapas') }} </span>
+                </div>
+                <div>
+                  <span class="sidebar-normal">{{ __('de producción') }} </span>
+                </div>
               </a>
             </li>
             <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('user.index') }}">
                 <span class="sidebar-mini"> UM </span>
                 <span class="sidebar-normal"> {{ __('Reporte 2') }} </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
+        <a class="nav-link" data-toggle="collapse" href="#laravelExample3" aria-expanded="true">
+          <i class="material-icons">work</i>
+          <p>{{ __('Administración') }}
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse show" id="laravelExample3">
+          <ul class="nav">
+            <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('profile.edit') }}">
+                <span class="sidebar-mini"> MU </span>
+                <span class="sidebar-normal">{{ __('Manejo de usuarios') }} </span>                
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('user.index') }}">
+                <span class="sidebar-mini"> MP </span>
+                <span class="sidebar-normal"> {{ __('Manejo de permisos') }} </span>
               </a>
             </li>
           </ul>
