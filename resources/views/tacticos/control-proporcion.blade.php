@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'ventas-gastos', 'titlePage' => __('Resumen ventas y gastos')])
+@extends('layouts.app', ['activePage' => 'control-proporcion', 'titlePage' => __('Control de proporción de insumos')])
 
 @section('content')
 <div class="content">

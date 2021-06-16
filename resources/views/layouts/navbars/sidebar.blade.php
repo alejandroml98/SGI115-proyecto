@@ -29,13 +29,52 @@
             <li class="nav-item{{ $activePage == 'ventas-gastos' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('ventas-gastos') }}">
                 <span class="sidebar-mini"> RVG </span>
-                <span class="sidebar-normal">{{ __('Resumen de ventas y gastos') }} </span>
+                <span class="sidebar-normal">{{ __('Resumen de ventas y') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('gastos') }} </span>
+                </div>             
               </a>
             </li>
-            <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('user.index') }}">
-                <span class="sidebar-mini"> UM </span>
-                <span class="sidebar-normal"> {{ __('Reporte 2') }} </span>
+            <li class="nav-item{{ $activePage == 'control-proporcion' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('control-proporcion') }}">
+                <span class="sidebar-mini"> CPI </span>
+                <span class="sidebar-normal"> {{ __('Control de proporción') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('de insumos en la elaboración') }} </span>
+                </div>
+                <div>        
+                  <span class="sidebar-normal">{{ __('de productos') }} </span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'compras-categoria' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('compras-categoria') }}">
+                <span class="sidebar-mini"> CC </span>
+                <span class="sidebar-normal"> {{ __('Compras por categoria') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('utilizadas en la producción') }} </span>
+                </div>
+                <div>        
+                  <span class="sidebar-normal">{{ __('mensual') }} </span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'uso-insumos' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('uso-insumos') }}">
+                <span class="sidebar-mini"> IEP </span>
+                <span class="sidebar-normal"> {{ __('Uso de insumos en') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('producción') }} </span>
+                </div>                
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'productos-elaborados' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('productos-elaborados') }}">
+                <span class="sidebar-mini"> CDP </span>
+                <span class="sidebar-normal"> {{ __('Cantidad de productos') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('elaborados') }} </span>
+                </div>   
               </a>
             </li>
           </ul>
@@ -63,10 +102,22 @@
                 </div>
               </a>
             </li>
-            <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('user.index') }}">
-                <span class="sidebar-mini"> UM </span>
-                <span class="sidebar-normal"> {{ __('Reporte 2') }} </span>
+            <li class="nav-item{{ $activePage == 'costos-entrega' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('costos-entrega') }}">
+                <span class="sidebar-mini"> CEP </span>
+                <span class="sidebar-normal"> {{ __('Costos de entrega por') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('producto en las bodegas') }} </span>
+                </div>                
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'productos-entregados' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('productos-entregados') }}">
+                <span class="sidebar-mini"> PES </span>
+                <span class="sidebar-normal"> {{ __('Productos entregados en') }} </span>
+                <div>        
+                  <span class="sidebar-normal">{{ __('las diferentes sucursales') }} </span>
+                </div>
               </a>
             </li>
           </ul>

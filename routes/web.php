@@ -59,6 +59,29 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('reporte/control-costos', function(){
 		return view('Estrategicos.control-costos');
 	})->name('control-costos');
+	
+	//------Tacticos
+	Route::get('reporte/control-proporcion', function(){
+		return view('tacticos.control-proporcion');
+	})->name('control-proporcion');
+	Route::get('reporte/compras-categoria', function(){
+		return view('tacticos.compras-categoria');
+	})->name('compras-categoria');
+	Route::get('reporte/uso-insumos', function(){
+		return view('tacticos.uso-insumos');
+	})->name('uso-insumos');
+	Route::get('reporte/productos-elaborados', function(){
+		return view('tacticos.productos-elaborados');
+	})->name('productos-elaborados');
+
+	//------Estrategicos
+	Route::get('reporte/costos-entrega', function(){
+		return view('Estrategicos.costos-entrega');
+	})->name('costos-entrega');
+	Route::get('reporte/productos-entregados', function(){
+		return view('Estrategicos.productos-entregados');
+	})->name('productos-entregados');
+
 });
 
 Route::group(['middleware' => 'auth'], function () {

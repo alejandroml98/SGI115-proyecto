@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'ventas-gastos', 'titlePage' => __('Resumen ventas y gastos')])
+@extends('layouts.app', ['activePage' => 'compras-categoria', 'titlePage' => __('Compras utilizadas en producción')])
 
 @section('content')
 <div class="content">
