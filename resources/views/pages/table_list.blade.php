@@ -7,8 +7,29 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header card-header-primary">
-            <h4 class="card-title ">Simple Table</h4>
+            <h4 class="card-title ">Reporte tactico x</h4>
             <p class="card-category"> Here is a subtitle for this table</p>
+            <form action="#" method="get">
+              <div class="row bg-light text-dark rounded mx-1">
+                <div class="col border border-dark rounded">
+                  <label for="a">Fecha inicio</label>
+                  <input class="form-control" type="date" name="a" id="a"> 
+                </div>
+                <div class="col border border-dark rounded">
+                  <label for="a">Fecha final</label>
+                  <input class="form-control" type="date" name="a" id="a"> 
+                </div>
+                <div class="col border border-dark rounded">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Selecciona un producto</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </form>            
           </div>
           <div class="card-body">
             <div class="table-responsive">
