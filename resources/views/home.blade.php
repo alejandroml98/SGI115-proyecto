@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['activePage' => 'home', 'titlePage' => __('Alimentos nutritivos')])
 
 @section('content')
 <!DOCTYPE html>

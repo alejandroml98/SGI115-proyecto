@@ -17,6 +17,12 @@
             <p>{{ __('Dashboard') }}</p>
         </a>
       </li>
+      <li class="nav-item{{ $activePage == 'home' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('home') }}">
+          <i class="material-icons">Home</i>
+            <p>{{ __('Home') }}</p>
+        </a>
+      </li>
       <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
           <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>
