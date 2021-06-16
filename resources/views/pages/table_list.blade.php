@@ -16,8 +16,8 @@
                   <input class="form-control" type="date" name="a" id="a"> 
                 </div>
                 <div class="col border border-dark rounded">
-                  <label for="a">Fecha final</label>
-                  <input class="form-control" type="date" name="a" id="a"> 
+                  <label for="b">Fecha final</label>
+                  <input class="form-control" type="date" name="b" id="b"> 
                 </div>
                 <div class="col border border-dark rounded">
                   <select class="form-control" id="exampleFormControlSelect2">
